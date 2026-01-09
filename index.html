@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zainal Ardi, S.E | Event Coordinator & Partnership</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .bg-gradient-text {
+            background: linear-gradient(to right, #1d4ed8, #4f46e5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-pattern {
+            background-image: radial-gradient(#cbd5e1 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+        }
+        /* Fluid Typography for Mobile */
+        @media (max-width: 768px) {
+            h1 { line-height: 1 !important; }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased selection:bg-blue-600 selection:text-white">
+
+    <!-- NAVIGASI -->
+    <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-500 py-6 md:py-8">
+        <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+            <div class="text-xl md:text-2xl font-black bg-gradient-text uppercase tracking-tighter italic">Zainal Ardi.</div>
+            
+            <!-- Menu Desktop -->
+            <div class="hidden md:flex space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-slate-500">
+                <a href="#about" class="hover:text-blue-600 transition-colors">Profil</a>
+                <a href="#skills" class="hover:text-blue-600 transition-colors">Keahlian</a>
+                <a href="#projects" class="hover:text-blue-600 transition-colors">Portofolio</a>
+                <a href="#contact" class="hover:text-blue-600 transition-colors">Kontak</a>
+            </div>
+
+            <div class="flex items-center">
+                <a href="./assets/resume.pdf" download class="bg-slate-900 text-white px-5 md:px-6 py-2.5 md:py-3 rounded-xl md:rounded-2xl text-[10px] font-bold uppercase tracking-widest hover:bg-blue-600 flex items-center gap-2 transition-all shadow-xl shadow-slate-200">
+                    <i data-lucide="download" class="w-3.5 h-3.5 md:w-4 md:h-4"></i> Unduh CV
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="about" class="pt-32 md:pt-48 pb-16 md:pb-24 px-6 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-16 hero-pattern">
+        <div class="flex-[1.2] space-y-6 md:space-y-8 text-center md:text-left order-2 md:order-1 text-left">
+            <div class="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 text-blue-700 rounded-xl text-[10px] font-bold uppercase tracking-widest">
+                <i data-lucide="star" class="w-3 h-3 fill-current"></i> Spesialis Event & Kemitraan
+            </div>
+            <h1 class="text-5xl md:text-8xl lg:text-9xl font-black tracking-tighter italic uppercase leading-none">
+                Hubungan Kuat. <br>Event <span class="text-blue-600">Hebat.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-500 max-w-xl leading-relaxed font-medium mx-auto md:mx-0">
+                S1 Manajemen Universitas Malikussaleh. Berpengalaman 5+ tahun dalam koordinasi event skala besar, manajemen talent, dan representasi brand. Ahli dalam koordinasi teknis backstage dan negosiasi strategis.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 pt-4">
+                <a href="#projects" class="w-full sm:w-auto bg-blue-600 text-white px-10 py-5 rounded-[2rem] font-bold uppercase text-[11px] tracking-widest flex items-center justify-center shadow-2xl shadow-blue-200 hover:scale-105 transition-all">
+                    Lihat Proyek <i data-lucide="chevron-right" class="ml-2 w-4 h-4"></i>
+                </a>
+                <a href="https://instagram.com/arbi66" target="_blank" class="p-4 bg-white rounded-2xl shadow-sm border border-slate-100 hover:text-pink-600 transition-all text-slate-400">
+                    <i data-lucide="instagram" class="w-6 h-6"></i>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Foto Profil -->
+        <div class="flex-1 relative w-full max-w-[280px] md:max-w-md group order-1 md:order-2">
+            <div class="aspect-[4/5] bg-slate-200 rounded-[3rem] md:rounded-[4rem] overflow-hidden shadow-2xl border-[8px] md:border-[12px] border-white relative z-10 transition-transform duration-700 group-hover:-translate-y-4">
+                <img src="./assets/profil.jpeg" alt="Zainal Ardi" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
+            </div>
+            <div class="absolute inset-0 bg-blue-600/10 rounded-[3rem] md:rounded-[4rem] rotate-6 -z-0"></div>
+        </div>
+    </section>
+
+    <!-- KEAHLIAN TEKNIS -->
+    <section id="skills" class="py-20 md:py-32 bg-white text-left">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16">
+            <div class="group">
+                <div class="w-16 h-16 flex items-center justify-center bg-slate-50 rounded-3xl mb-8 group-hover:bg-blue-600 group-hover:text-white transition-all duration-500">
+                    <i data-lucide="users" class="w-8 h-8"></i>
+                </div>
+                <h3 class="font-black text-xl md:text-2xl mb-4 tracking-tight uppercase italic text-blue-600">Event Coordination</h3>
+                <p class="text-slate-500 leading-relaxed font-medium">Manajemen audisi talent lokal, penyusunan timeline kegiatan, hingga pengelolaan database administrasi (GForm & Excel) untuk event berskala besar.</p>
+            </div>
+            <div class="group">
+                <div class="w-16 h-16 flex items-center justify-center bg-slate-50 rounded-3xl mb-8 group-hover:bg-blue-600 group-hover:text-white transition-all duration-500">
+                    <i data-lucide="radio" class="w-8 h-8"></i>
+                </div>
+                <h3 class="font-black text-xl md:text-2xl mb-4 tracking-tight uppercase italic text-blue-600">Technical Liaison</h3>
+                <p class="text-slate-500 leading-relaxed font-medium">Koordinasi backstage via intercom. Manajemen alur keluar-masuk artis nasional & kru, serta sinkronisasi divisi sound, lighting, dan security.</p>
+            </div>
+            <div class="group">
+                <div class="w-16 h-16 flex items-center justify-center bg-slate-50 rounded-3xl mb-8 group-hover:bg-blue-600 group-hover:text-white transition-all duration-500">
+                    <i data-lucide="handshake" class="w-8 h-8"></i>
+                </div>
+                <h3 class="font-black text-xl md:text-2xl mb-4 tracking-tight uppercase italic text-blue-600">Partnership & Sales</h3>
+                <p class="text-slate-500 leading-relaxed font-medium">Berpengalaman 3+ tahun di industri penyiaran (Vina Vira FM) dalam membangun relasi strategis, negosiasi sponsor, dan representasi brand.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTOFOLIO -->
+    <section id="projects" class="py-20 md:py-32 px-6 bg-slate-50 text-left">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-black mb-12 md:mb-16 tracking-tighter italic uppercase text-slate-900 border-b-4 border-blue-600 w-fit pb-4 italic">Dokumentasi Proyek.</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 text-left">
+                <!-- Melofest Vol. 2 -->
+                <div class="group cursor-pointer">
+                    <div class="relative aspect-[3/4] rounded-[2.5rem] md:rounded-[3.5rem] overflow-hidden mb-6 shadow-2xl transition-all duration-700">
+                        <img src="./assets/hero1.jpeg" alt="Melofest Vol 2" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent opacity-80 transition-opacity group-hover:opacity-90"></div>
+                        <div class="absolute inset-0 flex flex-col justify-end p-8 md:p-10 text-white translate-y-4 group-hover:translate-y-0 transition-transform">
+                            <span class="text-blue-400 text-[9px] md:text-[10px] font-black uppercase tracking-widest mb-2">Melofest Vol. 2 (2025)</span>
+                            <h3 class="text-2xl md:text-3xl font-black tracking-tight mb-2 leading-none uppercase italic">Head of Talent</h3>
+                            <p class="text-slate-300 text-[11px] md:text-xs font-medium">Manajemen seleksi band lokal, publikasi Instagram Melofest, dan hospitality artis nasional.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Melofest Vol. 1 -->
+                <div class="group cursor-pointer">
+                    <div class="relative aspect-[3/4] rounded-[2.5rem] md:rounded-[3.5rem] overflow-hidden mb-6 shadow-2xl transition-all duration-700">
+                        <img src="./assets/hero2.jpeg" alt="Melofest Vol 1" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent opacity-80 transition-opacity group-hover:opacity-90"></div>
+                        <div class="absolute inset-0 flex flex-col justify-end p-8 md:p-10 text-white translate-y-4 group-hover:translate-y-0 transition-transform">
+                            <span class="text-blue-400 text-[9px] md:text-[10px] font-black uppercase tracking-widest mb-2">Melofest Vol. 1 (2025)</span>
+                            <h3 class="text-2xl md:text-3xl font-black tracking-tight mb-2 leading-none uppercase italic">Liaison Officer</h3>
+                            <p class="text-slate-300 text-[11px] md:text-xs font-medium">Penghubung utama manajemen artis nasional & panitia. Mengelola alur panggung via sistem intercom.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Vina Vira FM -->
+                <div class="group cursor-pointer sm:col-span-2 lg:col-span-1 max-w-sm mx-auto sm:max-w-none">
+                    <div class="relative aspect-[3/4] rounded-[2.5rem] md:rounded-[3.5rem] overflow-hidden mb-6 shadow-2xl transition-all duration-700">
+                        <img src="./assets/hero3.jpeg" alt="Broadcasting" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent opacity-80 transition-opacity group-hover:opacity-90"></div>
+                        <div class="absolute inset-0 flex flex-col justify-end p-8 md:p-10 text-white translate-y-4 group-hover:translate-y-0 transition-transform">
+                            <span class="text-blue-400 text-[9px] md:text-[10px] font-black uppercase tracking-widest mb-2">PT. Vina Vira FM (2018-2021)</span>
+                            <h3 class="text-2xl md:text-3xl font-black tracking-tight mb-2 leading-none uppercase italic">Announcer & Sales</h3>
+                            <p class="text-slate-300 text-[11px] md:text-xs font-medium">Presentasi ide kerjasama sponsor, manajemen promosi radio, dan customer handling profesional.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section id="contact" class="py-20 md:py-32 px-4 md:px-6 max-w-6xl mx-auto text-left">
+        <div class="bg-slate-900 rounded-[3rem] md:rounded-[4rem] p-10 md:p-24 text-white flex flex-col md:flex-row gap-12 md:gap-20 items-center justify-between shadow-2xl relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-64 h-64 md:w-96 md:h-96 bg-blue-600/10 rounded-full blur-[80px] md:blur-[120px] -mr-32 -mt-32"></div>
+            <div class="max-w-lg relative z-10">
+                <h2 class="text-4xl md:text-7xl font-black mb-8 md:mb-10 leading-[0.9] tracking-tighter italic uppercase leading-none">Ayo Mulai <br>Kemitraan.</h2>
+                <div class="space-y-4 md:space-y-6 font-bold">
+                    <a href="mailto:Zainalardi8@gmail.com" class="flex items-center gap-3 md:gap-4 text-blue-400 hover:text-white transition-all text-base md:text-xl overflow-hidden text-ellipsis whitespace-nowrap group">
+                        <div class="w-10 h-10 md:w-12 md:h-12 bg-white/5 rounded-xl flex items-center justify-center group-hover:bg-blue-600 transition-all">
+                            <i data-lucide="mail" class="w-5 h-5"></i>
+                        </div>
+                        Zainalardi8@gmail.com
+                    </a>
+                    <a href="tel:082346519932" class="flex items-center gap-3 md:gap-4 text-green-400 hover:text-white transition-all text-base md:text-xl group">
+                        <div class="w-10 h-10 md:w-12 md:h-12 bg-white/5 rounded-xl flex items-center justify-center group-hover:bg-green-600 transition-all">
+                            <i data-lucide="phone" class="w-5 h-5"></i>
+                        </div>
+                        +62 823-4651-9932
+                    </a>
+                </div>
+            </div>
+            <div class="w-full md:w-96 space-y-4 md:space-y-6 relative z-10">
+                <form action="#" method="POST" class="space-y-4">
+                    <input type="text" placeholder="Nama Lengkap" class="w-full bg-white/5 border border-white/10 rounded-xl md:rounded-2xl px-6 md:px-8 py-4 md:py-5 text-sm outline-none focus:border-blue-500 transition-all text-white placeholder:text-slate-500 font-bold" required>
+                    <textarea placeholder="Deskripsi Kebutuhan / Pesan" class="w-full bg-white/5 border border-white/10 rounded-xl md:rounded-2xl px-6 md:px-8 py-4 md:py-5 text-sm outline-none focus:border-blue-500 transition-all text-white placeholder:text-slate-500 font-bold h-32" required></textarea>
+                    <button type="submit" class="w-full bg-white text-slate-900 py-5 md:py-6 rounded-[1.5rem] md:rounded-[2rem] font-black uppercase text-[11px] md:text-[12px] tracking-[0.2em] hover:bg-blue-600 hover:text-white transition-all shadow-xl shadow-black/20 transform hover:-translate-y-1">
+                        Kirim Pesan
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-12 md:py-16 text-center border-t border-slate-100">
+        <div class="text-[9px] md:text-[10px] font-black text-slate-400 uppercase tracking-[0.4em] md:tracking-[0.5em] mb-4">
+            Zainal Ardi, S.E Portfolio © 2026
+        </div>
+        <div class="flex justify-center gap-6 md:gap-8 text-[8px] md:text-[9px] font-bold text-slate-300 uppercase tracking-widest px-4">
+            <span class="flex items-center gap-2 hover:text-blue-600 transition-colors cursor-default">
+                <i data-lucide="award" class="w-3 h-3"></i> Event Management
+            </span>
+            <span class="flex items-center gap-2 hover:text-blue-600 transition-colors cursor-default">
+                <i data-lucide="radio" class="w-3 h-3"></i> Broadcasting
+            </span>
+        </div>
+    </footer>
+
+    <script>
+        // Jalankan Ikon
+        lucide.createIcons();
+
+        // Efek Navbar Scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('bg-white/90', 'backdrop-blur-xl', 'shadow-sm', 'py-3', 'md:py-4');
+                nav.classList.remove('py-6', 'md:py-8');
+            } else {
+                nav.classList.remove('bg-white/90', 'backdrop-blur-xl', 'shadow-sm', 'py-3', 'md:py-4');
+                nav.classList.add('py-6', 'md:py-8');
+            }
+        });
+    </script>
+</body>
+</html>
